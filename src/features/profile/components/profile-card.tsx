@@ -13,6 +13,7 @@ import {
   ItemTitle,
 } from "@/components/ui/item";
 import { authClient } from "@/lib/auth-client";
+import { useConfirm } from "@/lib/providers";
 
 interface ProfileCardProps {
   session: {
@@ -22,19 +23,28 @@ interface ProfileCardProps {
 
 export function ProfileCard({ session: { user } }: ProfileCardProps) {
   const router = useRouter();
+  const confirm = useConfirm();
   const [isLoggingOut, setIsLoggingOut] = useState(false);
 
-  const handleSignOut = async () => {
-    setIsLoggingOut(true);
-    await authClient.signOut({
-      fetchOptions: {
-        onSuccess: () => {
-          router.push("/login");
-          router.refresh();
-        },
+  // Confirm box without boilerplate
+  const handleSignOut = () => {
+    confirm({
+      title: "Sign Out",
+      description: "Are you sure you want to sign out?",
+      confirmLabel: "Sign Out",
+      onConfirm: async () => {
+        setIsLoggingOut(true);
+        await authClient.signOut({
+          fetchOptions: {
+            onSuccess: () => {
+              router.push("/login");
+              router.refresh();
+            },
+          },
+        });
+        setIsLoggingOut(false);
       },
     });
-    setIsLoggingOut(false);
   };
 
   return (
