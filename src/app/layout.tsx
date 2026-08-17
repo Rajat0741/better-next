@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "nbd-stack",
+  title: "better-next",
   description:
     "Next.js · Better Auth · Drizzle ORM — production-ready auth template",
 };

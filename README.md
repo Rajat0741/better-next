@@ -1,8 +1,8 @@
-# nbd-stack
+# better-next
 
-> **N**ext.js · **B**etter Auth · **D**rizzle ORM
+> **B**etter **Next** stack with Auth and Database
 
-A production-ready starter template for Next.js apps that need authentication without the boilerplate. Clone, configure, and ship.
+A production-ready starter template for Next.js apps that need authentication without the boilerplate. Features a modern landing page with feature cards, quick start guide, and clean design. Clone, configure, and ship.
 
 ## Stack
 
@@ -41,7 +41,7 @@ A production-ready starter template for Next.js apps that need authentication wi
 ### 1. Clone & install
 
 ```bash
-git clone https://github.com/Rajat0741/nbd-stack my-app
+git clone https://github.com/Rajat0741/better-next my-app
 cd my-app
 pnpm install
 ```
@@ -74,7 +74,7 @@ pnpm db:push
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). The app starts in dark mode and includes a theme toggle in the top-right corner. Sign in with Google to get redirected to your profile, or use the docs links on the landing page to jump to Next.js, Better Auth, or Drizzle documentation.
+Open [http://localhost:3000](http://localhost:3000). The app starts in dark mode and includes a theme toggle in the top-right corner. The landing page features a modern design with feature cards showcasing the core integrations (Better Auth, Next.js, Drizzle ORM, Neon Database), a quick start guide, and links to documentation. Sign in with Google to get redirected to your profile.
 
 ---
 
