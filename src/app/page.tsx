@@ -62,7 +62,7 @@ export default async function Home() {
 
   return (
     <main className="relative isolate min-h-screen overflow-hidden bg-background">
-      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[42rem] bg-[radial-gradient(ellipse_at_top_left,rgba(14,165,233,0.14),transparent_52%),radial-gradient(ellipse_at_top_right,rgba(139,92,246,0.12),transparent_48%)] dark:bg-[radial-gradient(ellipse_at_top_left,rgba(14,165,233,0.18),transparent_52%),radial-gradient(ellipse_at_top_right,rgba(139,92,246,0.16),transparent_48%)]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-168 bg-[radial-gradient(ellipse_at_top_left,rgba(14,165,233,0.14),transparent_52%),radial-gradient(ellipse_at_top_right,rgba(139,92,246,0.12),transparent_48%)] dark:bg-[radial-gradient(ellipse_at_top_left,rgba(14,165,233,0.18),transparent_52%),radial-gradient(ellipse_at_top_right,rgba(139,92,246,0.16),transparent_48%)]" />
 
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <nav className="flex h-20 items-center justify-between border-b border-border/60">
@@ -104,7 +104,7 @@ export default async function Home() {
             </div>
             <h1 className="max-w-3xl text-5xl font-semibold tracking-[-0.06em] text-foreground sm:text-7xl lg:text-[5.5rem] lg:leading-[0.96]">
               Ship the idea.
-              <span className="block bg-gradient-to-r from-sky-500 via-primary to-violet-500 bg-clip-text text-transparent">
+              <span className="block bg-linear-to-r from-sky-500 via-primary to-violet-500 bg-clip-text text-transparent">
                 Skip the setup.
               </span>
             </h1>
@@ -148,7 +148,7 @@ export default async function Home() {
           </div>
 
           <div className="relative mx-auto w-full max-w-lg">
-            <div className="absolute -inset-5 rounded-[2rem] bg-gradient-to-br from-sky-400/20 via-transparent to-violet-500/20 blur-2xl" />
+            <div className="absolute -inset-5 rounded-[2rem] bg-linear-to-br from-sky-400/20 via-transparent to-violet-500/20 blur-2xl" />
             <div className="relative overflow-hidden rounded-2xl border border-border/70 bg-card/90 shadow-2xl shadow-slate-900/10 backdrop-blur dark:shadow-black/30">
               <div className="flex items-center justify-between border-b border-border/70 px-5 py-4">
                 <div className="flex items-center gap-2.5">
